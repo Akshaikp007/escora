@@ -1,0 +1,115 @@
+/* ============================================================
+   STATISTICS / PROOF — DEDICATED STYLES
+   Isolated strictly under .escora-stats-section
+   ============================================================ */
+
+.escora-stats-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #EDE9DF;
+  border-top: 1px solid rgba(160, 140, 110, 0.2);
+  border-bottom: 1px solid rgba(160, 140, 110, 0.2);
+  padding: 80px 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.escora-stats-container {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+}
+
+.escora-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.escora-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 12px 24px;
+  position: relative;
+}
+
+/* Thin vertical separator between statistics */
+.escora-stat-divider {
+  position: absolute;
+  right: 0;
+  top: 12%;
+  height: 76%;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(140, 109, 64, 0) 0%,
+    rgba(140, 109, 64, 0.32) 50%,
+    rgba(140, 109, 64, 0) 100%
+  );
+  transform-origin: 50% 50%;
+  pointer-events: none;
+}
+
+.escora-stat-number {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: clamp(52px, 5.5vw, 84px);
+  font-weight: 300;
+  line-height: 1;
+  color: #8C6D40;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.escora-stat-suffix {
+  font-size: 0.72em;
+  margin-left: 3px;
+  opacity: 0.85;
+  font-weight: 300;
+  color: inherit;
+}
+
+.escora-stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #7A6852;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .escora-stats-section {
+    padding: 60px 0;
+  }
+  .escora-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 0;
+  }
+  .escora-stat-item:nth-child(2n) .escora-stat-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .escora-stats-section {
+    padding: 48px 0;
+  }
+  .escora-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .escora-stat-divider {
+    display: none;
+  }
+}
+

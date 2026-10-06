@@ -1,0 +1,179 @@
+/* ============================================================
+   REFINED LUXURY FOOTER — DEDICATED STYLES
+   Isolated strictly under .luxury-footer
+   ============================================================ */
+
+.luxury-footer {
+  position: relative;
+  background-color: #EDE9DF;
+  color: #231F1A;
+  padding: 100px 0 48px 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  border-top: 1px solid rgba(160, 140, 110, 0.22);
+}
+
+.luxury-footer-container {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+}
+
+/* Main Grid */
+.luxury-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 64px;
+  margin-bottom: 72px;
+}
+
+/* Brand Column */
+.luxury-footer-brand-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.luxury-footer-brand-title {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: #231F1A;
+  margin: 0 0 4px 0;
+}
+
+.luxury-footer-brand-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #8C6D40;
+  margin: 0 0 20px 0;
+}
+
+.luxury-footer-brand-desc {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #7A6852;
+  margin: 0;
+  max-width: 36ch;
+}
+
+/* Navigation Columns */
+.luxury-footer-nav-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.luxury-footer-col-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8C6D40;
+  margin: 0 0 24px 0;
+}
+
+.luxury-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.luxury-footer-link {
+  font-size: 13.5px;
+  color: #6B6055;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.luxury-footer-link:hover {
+  color: #8C6D40;
+  transform: translateX(3px);
+}
+
+/* Thin Divider */
+.luxury-footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(160, 140, 110, 0.22);
+  margin-bottom: 36px;
+}
+
+/* Bottom Bar */
+.luxury-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.luxury-footer-copy {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9A8A72;
+  margin: 0;
+}
+
+.luxury-footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.luxury-footer-legal-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9A8A72;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.luxury-footer-legal-link:hover {
+  color: #8C6D40;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .luxury-footer {
+    padding: 80px 0 40px 0;
+  }
+  .luxury-footer-container {
+    padding: 0 32px;
+  }
+  .luxury-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .luxury-footer {
+    padding: 60px 0 32px 0;
+  }
+  .luxury-footer-container {
+    padding: 0 20px;
+  }
+  .luxury-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .luxury-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

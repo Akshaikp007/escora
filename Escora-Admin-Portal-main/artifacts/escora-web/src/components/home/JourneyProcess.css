@@ -1,0 +1,257 @@
+/* ============================================================
+   HOW YOUR JOURNEY BEGINS — DEDICATED STYLES
+   Isolated strictly under .journey-process-section
+   ============================================================ */
+
+.journey-process-section {
+  position: relative;
+  background-color: #FAF7F0;
+  background-image: 
+    radial-gradient(circle at 75% 80%, rgba(224, 212, 194, 0.3) 0%, transparent 60%),
+    linear-gradient(180deg, #FAF7F0 0%, #F5F1E8 100%);
+  color: #231F1A;
+  padding: 140px 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  border-top: 1px solid rgba(160, 140, 110, 0.18);
+}
+
+.journey-process-container {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+}
+
+.journey-process-header {
+  max-width: 720px;
+  margin-bottom: 72px;
+}
+
+.journey-process-eyebrow-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.journey-process-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #8C6D40;
+  margin: 0;
+}
+
+.journey-process-eyebrow-line {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(140, 109, 64, 0.3);
+  max-width: 70px;
+}
+
+.journey-process-heading {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: clamp(38px, 4vw, 56px);
+  font-weight: 400;
+  line-height: 1.12;
+  color: #231F1A;
+  letter-spacing: -0.01em;
+  margin: 0 0 20px 0;
+}
+
+.journey-process-heading-accent {
+  color: #8C6D40;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.journey-process-description {
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #6B6055;
+  margin: 0;
+  max-width: 54ch;
+}
+
+.journey-process-divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(160, 140, 110, 0.22);
+  transform-origin: left;
+  margin-bottom: 48px;
+}
+
+/* 2-column or 3-column structured steps grid */
+.journey-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 40px;
+  margin-bottom: 64px;
+}
+
+.journey-process-step {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 16px;
+}
+
+.journey-process-step-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #8C6D40;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.journey-process-step-num::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  background-color: rgba(140, 109, 64, 0.3);
+}
+
+.journey-process-step-title {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #231F1A;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.01em;
+}
+
+.journey-process-step-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #6B6055;
+  margin: 0;
+}
+
+/* Bottom CTA Area */
+.journey-process-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 24px;
+  border-top: 1px solid rgba(160, 140, 110, 0.18);
+}
+
+.journey-process-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 34px;
+  background: transparent;
+  color: #231F1A;
+  border: 1px solid rgba(140, 109, 64, 0.4);
+  border-radius: 9999px;
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 4px 14px rgba(140, 109, 64, 0.08);
+}
+
+.journey-process-cta-btn .journey-process-arrow {
+  font-size: 16px;
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.journey-process-cta-btn:hover {
+  background-color: #8C6D40;
+  border-color: #8C6D40;
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(140, 109, 64, 0.25);
+}
+
+.journey-process-cta-btn:hover .journey-process-arrow {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .journey-process-section {
+    padding: 100px 0;
+  }
+  .journey-process-container {
+    padding: 0 32px;
+  }
+  .journey-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .journey-process-section {
+    padding: 75px 0;
+  }
+  .journey-process-container {
+    padding: 0 20px;
+  }
+  .journey-process-header {
+    margin-bottom: 48px;
+  }
+  .journey-process-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 32px;
+    margin-bottom: 44px;
+  }
+}
+
+/* ── Heritage Culture Art Watermark (Bottom-Right Elephant) ── */
+.journey-process-decor-art {
+  position: absolute;
+  bottom: -20px;
+  right: 2%;
+  width: 520px;
+  max-width: 36vw;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  mix-blend-mode: multiply;
+  opacity: 0.16;
+  transition: opacity 0.5s ease;
+}
+
+.journey-process-art-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: contrast(1.05);
+}
+
+@media (max-width: 1024px) {
+  .journey-process-decor-art {
+    width: 360px;
+    max-width: 45vw;
+    opacity: 0.12;
+  }
+}
+
+@media (max-width: 768px) {
+  .journey-process-decor-art {
+    width: 240px;
+    max-width: 65vw;
+    right: -10px;
+    bottom: -10px;
+    opacity: 0.09;
+  }
+}

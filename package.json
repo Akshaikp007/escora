@@ -1,0 +1,10 @@
+{
+  "name": "escora-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix Escora-Admin-Portal-main run dev",
+    "dev:admin": "npm --prefix Escora-Admin-Portal-main run dev:admin",
+    "build": "npm --prefix Escora-Admin-Portal-main run build"
+  }
+}

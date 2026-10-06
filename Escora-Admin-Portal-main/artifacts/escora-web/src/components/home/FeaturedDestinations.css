@@ -1,0 +1,324 @@
+/* ============================================================
+   FEATURED KERALA DESTINATIONS — DEDICATED STYLES
+   Isolated strictly under .featured-destinations-section
+   ============================================================ */
+
+.featured-destinations-section {
+  position: relative;
+  background-color: #F8F5EE;
+  background-image: 
+    radial-gradient(circle at 80% 10%, rgba(224, 212, 194, 0.3) 0%, transparent 55%),
+    linear-gradient(180deg, #FAF7F0 0%, #F5F1E6 100%);
+  color: #231F1A;
+  padding: 130px 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  border-top: 1px solid rgba(160, 140, 110, 0.18);
+}
+
+.featured-dest-container {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+}
+
+/* Header Area */
+.featured-dest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+.featured-dest-header-left {
+  max-width: 680px;
+}
+
+.featured-dest-eyebrow-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.featured-dest-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #8C6D40;
+  margin: 0;
+}
+
+.featured-dest-eyebrow-line {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(140, 109, 64, 0.3);
+  max-width: 70px;
+}
+
+.featured-dest-heading {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: clamp(38px, 3.8vw, 56px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #231F1A;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.featured-dest-heading-accent {
+  color: #8C6D40;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.featured-dest-header-desc {
+  max-width: 380px;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #6B6055;
+  margin: 0;
+}
+
+/* 4-Card Grid */
+.featured-dest-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.featured-dest-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 480px;
+  aspect-ratio: 0.68;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #D8D0C4;
+  border: 1px solid rgba(160, 140, 110, 0.2);
+  box-shadow: 0 16px 36px -10px rgba(90, 70, 40, 0.18);
+  transition: 
+    transform 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+    border-color 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.featured-dest-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(140, 109, 64, 0.4);
+  box-shadow: 0 24px 48px -12px rgba(90, 70, 40, 0.28);
+}
+
+.featured-dest-card-image-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.featured-dest-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.featured-dest-card:hover .featured-dest-card-image {
+  transform: scale(1.04);
+}
+
+.featured-dest-card-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 20, 10, 0) 25%,
+    rgba(30, 20, 10, 0.4) 52%,
+    rgba(20, 12, 4, 0.82) 75%,
+    rgba(15, 8, 2, 0.95) 100%
+  );
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.featured-dest-card:hover .featured-dest-card-scrim {
+  opacity: 0.92;
+}
+
+.featured-dest-card-content {
+  position: relative;
+  z-index: 3;
+  padding: 24px 22px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pointer-events: none;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.featured-dest-card:hover .featured-dest-card-content {
+  transform: translateY(-3px);
+}
+
+.featured-dest-card-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #DFC8A2;
+  margin-bottom: 8px;
+}
+
+.featured-dest-card-title {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #FFFFFF;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.01em;
+}
+
+.featured-dest-card-desc {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 18px 0;
+}
+
+.featured-dest-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 12px;
+}
+
+.featured-dest-card-cta {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #DFC8A2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.featured-dest-card-cta-arrow {
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.featured-dest-card:hover .featured-dest-card-cta-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .featured-destinations-section {
+    padding: 100px 0;
+  }
+  .featured-dest-container {
+    padding: 0 32px;
+  }
+  .featured-dest-grid {
+    gap: 16px;
+  }
+  .featured-dest-card {
+    min-height: 420px;
+  }
+  .featured-dest-card-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 960px) {
+  .featured-dest-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 44px;
+  }
+  .featured-dest-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .featured-dest-card {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-destinations-section {
+    padding: 70px 0;
+  }
+  .featured-dest-container {
+    padding: 0 20px;
+  }
+  .featured-dest-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .featured-dest-card {
+    min-height: 360px;
+    aspect-ratio: auto;
+  }
+}
+
+/* ── Heritage Culture Art Watermark (Bottom-Right Snake Boat Transparent PNG) ── */
+.featured-dest-decor-art {
+  position: absolute;
+  bottom: -20px;
+  right: 2%;
+  width: 540px;
+  max-width: 38vw;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  opacity: 0.26;
+  transition: opacity 0.5s ease;
+}
+
+.featured-dest-art-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: contrast(1.05);
+}
+
+@media (max-width: 1024px) {
+  .featured-dest-decor-art {
+    width: 380px;
+    max-width: 45vw;
+    opacity: 0.13;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-dest-decor-art {
+    width: 260px;
+    max-width: 70vw;
+    right: -10px;
+    bottom: -10px;
+    opacity: 0.10;
+  }
+}

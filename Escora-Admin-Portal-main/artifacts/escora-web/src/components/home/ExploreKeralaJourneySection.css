@@ -1,0 +1,92 @@
+/* ═════════════════════════════════════════════════════════════════════
+   EXPLORE KERALA JOURNEY SECTION — SCOPED EDITORIAL STYLES
+   Isolated CSS namespace: .explore-kerala-journey
+   ═════════════════════════════════════════════════════════════════════ */
+
+/* Ensure html and body clip horizontal overflow without breaking position:sticky */
+html,
+body {
+  overflow-x: clip !important;
+}
+
+.explore-kerala-journey-outer {
+  position: relative;
+  width: 100%;
+  background-color: #FAF7F2;
+  overflow: visible !important;
+  contain: none !important;
+}
+
+/* 600vh sticky scroll track provides generous, unhurried distance for all 8 destinations */
+.explore-kerala-journey-sticky-track {
+  position: relative;
+  height: 600vh;
+  width: 100%;
+  overflow: visible !important;
+  contain: none !important;
+}
+
+@media (max-width: 1024px) {
+  .explore-kerala-journey-sticky-track {
+    height: 520vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-kerala-journey-sticky-track {
+    height: 440vh;
+  }
+}
+
+/* Sticky stage: pins to top of viewport while scrolling through the track */
+.explore-kerala-journey-viewport {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FAF7F2;
+  color: #0F231C;
+  z-index: 10;
+  padding: 1rem 0;
+  user-select: none;
+  -webkit-user-select: none;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .explore-kerala-journey-viewport {
+    padding: 0.5rem 0;
+  }
+}
+
+.explore-kerala-journey .font-serif-luxury {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.explore-kerala-journey .font-heading-luxury {
+  font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+}
+
+.explore-kerala-journey .font-sans-luxury {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.explore-kerala-journey .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-kerala-journey .no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Luxury card shadow */
+.explore-kerala-journey .shadow-card-luxury {
+  box-shadow: 0 24px 48px -12px rgba(15, 35, 28, 0.22), 0 0 1px 1px rgba(255, 255, 255, 0.1) inset;
+}
