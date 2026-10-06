@@ -185,7 +185,7 @@ export default function HealingKerala() {
       {/* Heritage Culture Art Watermark: Ayurvedic Botanical Herbs & Nilavilakku on bottom-right flank */}
       <div className="healing-kerala-decor-art" aria-hidden="true">
         <img
-          src="/images/art/ayurveda.jpg"
+          src="/images/art/ayurveda.png"
           alt=""
           className="healing-kerala-art-img"
           loading="lazy"

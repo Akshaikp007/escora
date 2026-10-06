@@ -135,7 +135,7 @@ export default function Testimonials() {
       {/* Heritage Culture Art Watermark: Fort Kochi Coast Fishing Nets on bottom-left flank */}
       <div className="escora-testimonials-decor-art" aria-hidden="true">
         <img
-          src="/images/art/cheenavala.jpg"
+          src="/images/art/cheenavala.png"
           alt=""
           className="escora-testimonials-art-img"
           loading="lazy"

@@ -158,7 +158,7 @@ export default function JourneyProcess() {
       {/* Heritage Culture Art Watermark: Temple Elephant on bottom-right flank */}
       <div className="journey-process-decor-art" aria-hidden="true">
         <img
-          src="/images/art/elephant.jpg"
+          src="/images/art/elephant.png"
           alt=""
           className="journey-process-art-img"
           loading="lazy"

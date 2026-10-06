@@ -245,7 +245,7 @@
   }
 }
 
-/* ── Heritage Culture Art Watermark (Bottom-Right Ayurveda) ── */
+/* ── Heritage Culture Art Watermark (Bottom-Right Ayurveda Transparent PNG) ── */
 .healing-kerala-decor-art {
   position: absolute;
   bottom: -20px;
@@ -255,8 +255,7 @@
   pointer-events: none;
   user-select: none;
   z-index: 0;
-  mix-blend-mode: multiply;
-  opacity: 0.18;
+  opacity: 0.26;
   transition: opacity 0.5s ease;
 }
 
